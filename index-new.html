@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Induction of Labour: Understanding the Different Methods | DILAPAN-S</title>
+  <meta name="description" content="Neutral educational information for expectant mothers about induction of labour, cervical ripening, mechanical methods and pharmacological methods including prostaglandins." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Induction of Labour: Understanding the Different Methods" />
+  <meta property="og:description" content="Educational information about induction of labour methods, cervical ripening, mechanical methods and pharmacological approaches." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --beige: #FFFBF9;
+      --white: #FFFFFF;
+      --pink: #C80078;
+      --dark-pink: #75144B;
+      --violet: #787DAA;
+      --text: #75144B;
+      --muted: #6E5870;
+      --border: rgba(117, 20, 75, 0.16);
+      --soft-violet: rgba(120, 125, 170, 0.14);
+      --soft-pink: rgba(200, 0, 120, 0.07);
+      --shadow: 0 18px 50px rgba(117, 20, 75, 0.10);
+      --radius-lg: 32px;
+      --radius-md: 20px;
+      --max-width: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: var(--beige);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--pink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
+    a:hover { color: var(--dark-pink); }
+
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 251, 249, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--dark-pink);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+
+    .logo img {
+      width: 118px;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 0.94rem;
+    }
+
+    .nav-links a {
+      color: var(--dark-pink);
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    .nav-links a:hover { color: var(--pink); }
+
+    .hero {
+      position: relative;
+      padding: 82px 0 76px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 86% 12%, rgba(200, 0, 120, 0.13), transparent 34%),
+        radial-gradient(circle at 10% 70%, rgba(120, 125, 170, 0.18), transparent 30%),
+        var(--beige);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.98fr);
+      gap: 58px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--pink);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--pink);
+      border-radius: 99px;
+    }
+
+    h1, h2, h3 {
+      color: var(--dark-pink);
+      line-height: 1.13;
+      margin: 0 0 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5.3vw, 5.3rem);
+      letter-spacing: -0.06em;
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: clamp(1.85rem, 3.1vw, 3.15rem);
+      letter-spacing: -0.045em;
+    }
+
+    h3 {
+      font-size: clamp(1.18rem, 1.8vw, 1.55rem);
+      letter-spacing: -0.025em;
+    }
+
+    p { margin: 0 0 18px; }
+
+    .lead {
+      font-size: clamp(1.04rem, 1.7vw, 1.25rem);
+      color: var(--muted);
+      max-width: 780px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .button--primary {
+      background: var(--pink);
+      color: var(--white);
+      box-shadow: 0 12px 30px rgba(200, 0, 120, 0.22);
+    }
+
+    .button--primary:hover {
+      background: var(--dark-pink);
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .button--secondary {
+      background: var(--white);
+      color: var(--dark-pink);
+      border-color: var(--border);
+    }
+
+    .button--secondary:hover {
+      color: var(--pink);
+      text-decoration: none;
+    }
+
+    .disclaimer-small {
+      margin-top: 26px;
+      padding: 14px 18px;
+      background: var(--white);
+      border-left: 4px solid var(--pink);
+      border-radius: 0 16px 16px 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      box-shadow: 0 12px 34px rgba(117, 20, 75, 0.06);
+    }
+
+    .hero-image-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      min-height: 500px;
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 500px;
+      object-fit: cover;
+    }
+
+    .hero-caption {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      padding: 18px;
+      background: rgba(255, 251, 249, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      border-radius: 18px;
+      color: var(--dark-pink);
+      box-shadow: 0 16px 34px rgba(117, 20, 75, 0.14);
+    }
+
+    .hero-caption strong { display: block; margin-bottom: 3px; }
+    .hero-caption span { color: var(--muted); font-size: 0.94rem; }
+
+    .section { padding: 76px 0; }
+    .section--white { background: var(--white); }
+    .section--beige { background: var(--beige); }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(260px, 0.5fr);
+      gap: 34px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .answer-box,
+    .card,
+    .detail-card,
+    .faq-item,
+    .source-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow);
+    }
+
+    .answer-box {
+      padding: 34px;
+      max-width: 920px;
+    }
+
+    .answer-box ul,
+    .scenario-list,
+    .source-list,
+    .card ul {
+      margin: 18px 0 0;
+      padding-left: 22px;
+    }
+
+    li { margin-bottom: 10px; }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+      margin-top: 32px;
+    }
+
+    .card { padding: 30px; }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      flex: 0 0 auto;
+      border-radius: 16px;
+      background: var(--soft-pink);
+      display: grid;
+      place-items: center;
+      color: var(--pink);
+      font-weight: 900;
+    }
+
+    .icon--violet {
+      background: var(--soft-violet);
+      color: var(--violet);
+    }
+
+    .table-wrapper {
+      margin-top: 32px;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      min-width: 800px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 19px 20px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--dark-pink);
+      color: var(--white);
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+    }
+
+    tbody tr:nth-child(even) { background: var(--beige); }
+    tr:last-child td { border-bottom: 0; }
+
+    td:first-child {
+      font-weight: 850;
+      color: var(--dark-pink);
+      width: 24%;
+    }
+
+    .table-note {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .detail-card { padding: 30px; }
+
+    .image-split {
+      display: grid;
+      grid-template-columns: minmax(300px, 0.82fr) minmax(0, 1fr);
+      gap: 34px;
+      align-items: center;
+    }
+
+    .content-image {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .content-image img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+    }
+
+    .scenario-box {
+      padding: 34px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+    }
+
+    .product-box {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.05fr);
+      gap: 34px;
+      align-items: center;
+      padding: 34px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+    }
+
+    .product-box img {
+      width: 100%;
+      border-radius: 22px;
+      background: var(--beige);
+      border: 1px solid var(--border);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .faq-item { padding: 26px 28px; }
+    .faq-item h3 { font-size: 1.16rem; margin-bottom: 10px; }
+    .faq-item p { margin-bottom: 0; }
+
+    .source-card { padding: 32px; }
+    .source-list a { font-weight: 750; }
+
+    .footer {
+      padding: 44px 0;
+      background: var(--dark-pink);
+      color: var(--white);
+    }
+
+    .footer p { color: rgba(255, 255, 255, 0.86); margin-bottom: 0; }
+    .footer strong { color: var(--white); display: block; margin-bottom: 10px; }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .section-intro,
+      .image-split,
+      .product-box,
+      .method-grid,
+      .detail-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero { padding-top: 56px; }
+      .hero-image-card, .hero-image-card img { min-height: 420px; }
+      .nav { align-items: flex-start; flex-direction: column; padding: 16px 0; }
+      .nav-links { flex-wrap: wrap; gap: 12px 18px; }
+    }
+
+    @media (max-width: 640px) {
+      body { font-size: 15px; }
+      .container { width: min(100% - 24px, var(--max-width)); }
+      .section { padding: 56px 0; }
+      .answer-box, .card, .detail-card, .faq-item, .source-card, .scenario-box, .product-box { padding: 22px; }
+      .hero-caption { position: static; margin: 0; border-radius: 0; }
+      .hero-image-card img { min-height: 320px; }
+      .content-image img { height: 300px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav" aria-label="Page navigation">
+      <a class="logo" href="https://www.dilapan.com/" aria-label="DILAPAN-S homepage">
+        <img src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68e5fdb2909881683b7c4081_dilapan-logo.svg" alt="DILAPAN-S" />
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#definition">Definition</a>
+        <a href="#methods">Methods</a>
+        <a href="#comparison">Comparison</a>
+        <a href="#choice">Method choice</a>
+        <a href="#faq">FAQ</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Educational guide</span>
+          <h1 id="page-title">Induction of Labour: Understanding the Different Methods</h1>
+          <p class="lead">
+            <a href="https://www.dilapan.com/expectant-mothers/induction-of-labour">Induction of labour</a> is a medical process used to help start labour when there is a clinical reason to do so. This page explains common approaches to <a href="https://www.dilapan.com/blog/cervical-ripening-mechanical-or-pharmacological-approach">cervical ripening</a>, including <a href="https://www.cochrane.org/evidence/CD001233_mechanical-methods-induction-labour">mechanical methods</a> and pharmacological methods such as <a href="https://www.nice.org.uk/guidance/ng207/chapter/recommendations">prostaglandins</a>.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#comparison">Compare methods</a>
+            <a class="button button--secondary" href="https://www.dilapan.com/expectant-mothers/guide-to-induction">Read the step-by-step guide</a>
+          </div>
+          <p class="disclaimer-small">
+            This content is for educational purposes only and does not replace advice from a qualified healthcare professional. Decisions about induction of labour should always be made with your healthcare team.
+          </p>
+        </div>
+
+        <figure class="hero-image-card">
+          <img src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68e76dc3b07eb27969e54ff8_em-hero-1.webp" alt="Pregnant woman in a calm educational setting" />
+          <figcaption class="hero-caption">
+            <strong>Understanding cervical readiness</strong>
+            <span>Image source: DILAPAN-S website. Used as a visual reference for educational context.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--white" id="definition" aria-labelledby="definition-title">
+      <div class="container">
+        <span class="eyebrow">AEO definition</span>
+        <div class="answer-box">
+          <h2 id="definition-title">What is induction of labour?</h2>
+          <p>
+            <a href="https://www.dilapan.com/expectant-mothers/induction-of-labour">Induction of labour</a> is the planned medical initiation of labour before it starts spontaneously. It may involve <a href="https://www.dilapan.com/blog/cervical-ripening-mechanical-or-pharmacological-approach">cervical ripening</a>, stimulation of uterine contractions, or both, depending on cervical readiness, pregnancy circumstances and clinical judgement.
+          </p>
+          <ul>
+            <li>It may be considered when continuing pregnancy is associated with specific clinical concerns.</li>
+            <li>It can involve preparing the cervix, also called cervical ripening.</li>
+            <li>It may use mechanical methods, pharmacological methods or other clinical procedures.</li>
+            <li>The choice of method depends on individual factors and local clinical protocols.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--beige" id="methods" aria-labelledby="methods-title">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">Main approaches</span>
+            <h2 id="methods-title">Main types of induction methods</h2>
+          </div>
+          <p class="lead">
+            Induction methods are commonly grouped into mechanical methods and pharmacological methods. Some care pathways may use more than one approach during the induction process.
+          </p>
+        </div>
+
+        <div class="method-grid">
+          <article class="card">
+            <div class="card-top">
+              <div class="icon">A</div>
+              <div>
+                <h3>Mechanical methods</h3>
+                <p>
+                  <a href="https://www.cochrane.org/evidence/CD001233_mechanical-methods-induction-labour">Mechanical methods</a> are used to support cervical ripening by applying local physical pressure to the cervix. Examples include <a href="https://www.dilapan.com/blog/cervical-ripening-mechanical-or-pharmacological-approach">hygroscopic dilators</a>, such as <a href="https://www.dilapan.com/expectant-mothers/about-dilapan-s">DILAPAN-S</a>, and balloon catheters. These methods typically act locally and do not primarily rely on medication to stimulate uterine contractions.
+                </p>
+              </div>
+            </div>
+            <ul>
+              <li><a href="https://www.dilapan.com/expectant-mothers/about-dilapan-s">Hygroscopic dilators</a></li>
+              <li><a href="https://www.cochrane.org/evidence/CD001233_mechanical-methods-induction-labour">Balloon catheters</a></li>
+              <li>Other mechanical cervical ripening approaches used according to local practice</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="icon icon--violet">B</div>
+              <div>
+                <h3>Pharmacological methods</h3>
+                <p>
+                  <a href="https://www.nice.org.uk/guidance/ng207/chapter/recommendations">Pharmacological methods</a> use medication to help ripen the cervix and may also stimulate uterine activity. These can include prostaglandins, sometimes administered in the form of vaginal inserts available under various brand names, tablets, gels or other formulations depending on local protocols.
+                </p>
+              </div>
+            </div>
+            <ul>
+              <li><a href="https://www.nice.org.uk/guidance/ng207/chapter/recommendations">Prostaglandins</a></li>
+              <li>Medication-based cervical ripening approaches</li>
+              <li>Other medicines used under clinical supervision</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="comparison" aria-labelledby="comparison-title">
+      <div class="container">
+        <span class="eyebrow">Core comparison</span>
+        <h2 id="comparison-title">Mechanical and pharmacological induction methods</h2>
+        <p class="lead">
+          The table below summarises general differences described in sources such as <a href="https://www.who.int/publications/i/item/9789240055780">WHO guidance</a>, <a href="https://www.nice.org.uk/guidance/ng207/chapter/recommendations">NICE recommendations</a> and <a href="https://www.cochrane.org/evidence/CD001233_mechanical-methods-induction-labour">clinical reviews</a>. It is not intended to guide individual treatment decisions.
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Parameter</th>
+                <th scope="col">Mechanical methods</th>
+                <th scope="col">Pharmacological methods</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mechanism of action</td>
+                <td>Typically support cervical ripening through local physical pressure or gradual dilation of the cervix.</td>
+                <td>Use medication, such as prostaglandins, to support cervical ripening and may stimulate uterine activity.</td>
+              </tr>
+              <tr>
+                <td>Reversibility</td>
+                <td>Some mechanical devices can usually be removed if clinically indicated.</td>
+                <td>Reversibility depends on the formulation, dose, route of administration and clinical context.</td>
+              </tr>
+              <tr>
+                <td>Uterine stimulation</td>
+                <td>Typically act locally and may be associated with less direct pharmacological stimulation of uterine contractions.</td>
+                <td>May be associated with uterine stimulation, including excessive uterine activity in some cases.</td>
+              </tr>
+              <tr>
+                <td>Monitoring requirements</td>
+                <td>Monitoring depends on maternal and foetal factors, local protocols and the specific method used.</td>
+                <td>Monitoring requirements may be more frequent when medication can affect uterine activity or foetal condition.</td>
+              </tr>
+              <tr>
+                <td>Use in specific clinical situations</td>
+                <td>May be considered in certain clinical situations depending on guidelines, local practice and individual risk factors.</td>
+                <td>Use depends on the medicine, contraindications, clinical circumstances and local guidance.</td>
+              </tr>
+              <tr>
+                <td>Duration variability</td>
+                <td>The time required for cervical ripening can vary and depends on cervical readiness and clinical context.</td>
+                <td>The response to medication can vary depending on dose, formulation, cervical readiness and maternal-foetal factors.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="table-note">
+          Sources: <a href="https://www.who.int/publications/i/item/9789240055780">WHO guidelines</a>, <a href="https://www.nice.org.uk/guidance/ng207/chapter/recommendations">NICE recommendations</a>, <a href="https://www.cochrane.org/evidence/CD001233_mechanical-methods-induction-labour">peer-reviewed clinical studies and reviews</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--beige" aria-labelledby="detail-title">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">Clinical context</span>
+            <h2 id="detail-title">Detailed comparison of induction approaches</h2>
+          </div>
+          <p class="lead">These sections explain considerations that may be discussed with a doctor or midwife before induction of labour.</p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card">
+            <h3>Safety considerations</h3>
+            <p>Safety considerations vary according to maternal history, foetal condition, gestational age, cervical readiness and the reason for induction of labour.</p>
+            <p>According to <a href="https://www.nice.org.uk/guidance/ng207/chapter/recommendations">NICE</a>, pharmacological methods can cause hyperstimulation and require regular monitoring of uterine activity and foetal condition. Mechanical methods also require correct placement and monitoring according to clinical protocols.</p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Level of control</h3>
+            <p>The degree of clinical control differs between methods. Some mechanical devices can usually be removed when needed, while the effect of medicines depends on formulation, route and dose.</p>
+            <p>Control should be understood within the full clinical pathway, including assessment before induction, monitoring during the process and decisions about next steps.</p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Patient experience</h3>
+            <p>Patient experience during induction of labour can vary widely. Some people report discomfort during placement of a device or administration of medication, while others mainly notice cramping, pressure or irregular contractions.</p>
+            <p>Clinical studies and reviews may evaluate outcomes such as pain, satisfaction, mobility and the need for additional procedures. Individual experience may differ from study findings.</p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Flexibility of use</h3>
+            <p>Different methods may fit different care settings, hospital protocols and patient risk profiles. Some methods are used only in hospital settings, while selected pathways may include outpatient cervical ripening for carefully assessed low-risk patients.</p>
+            <p>The suitability of any method depends on clinical assessment, availability of trained staff, local guidance and the ability to return to hospital if needed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="choice" aria-labelledby="choice-title">
+      <div class="container image-split">
+        <figure class="content-image">
+          <img src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68ecc3fc9428749e7376401b_hero-image-1.webp" alt="Educational image from DILAPAN-S website about cervical readiness before birth" />
+        </figure>
+
+        <div class="scenario-box">
+          <span class="eyebrow">Individualised care</span>
+          <h2 id="choice-title">How is the method chosen?</h2>
+          <p>
+            The method of induction of labour is chosen on an individual basis. Healthcare professionals consider clinical factors, patient preferences, available methods and local protocols.
+          </p>
+          <ul class="scenario-list">
+            <li><strong>Previous Caesarean section:</strong> previous uterine surgery may influence which cervical ripening or induction methods are considered appropriate.</li>
+            <li><strong>Risk factors:</strong> maternal conditions, foetal wellbeing, pregnancy complications and gestational age can affect the induction plan.</li>
+            <li><strong>Cervical readiness:</strong> the cervix may be assessed, often using a <a href="https://www.dilapan.com/blog/the-bishop-score-the-ultimate-guide">Bishop score</a>, to determine whether cervical ripening is needed before contractions are stimulated.</li>
+            <li><strong>Reason for induction:</strong> the clinical indication may affect timing, setting and monitoring.</li>
+            <li><strong>Local practice:</strong> hospitals may follow different guidelines, formularies, staffing models and care pathways.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--beige" aria-labelledby="example-title">
+      <div class="container">
+        <span class="eyebrow">Educational product mention</span>
+        <h2 id="example-title">Example of a mechanical method</h2>
+
+        <div class="product-box">
+          <img src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68e75a0d756f7e162c5de4ab_home-img-2.webp" alt="DILAPAN-S educational image from product website" />
+          <div>
+            <h3>Hygroscopic dilators</h3>
+            <p>
+              <a href="https://www.dilapan.com/expectant-mothers/about-dilapan-s">Hygroscopic dilators</a> are mechanical cervical ripening devices. They are placed in the cervix by a trained healthcare professional and gradually absorb moisture from surrounding tissue, which allows them to expand.
+            </p>
+            <p>
+              <a href="https://www.dilapan.com/expectant-mothers/about-dilapan-s">DILAPAN-S</a> is one example of a hygroscopic dilator used as a mechanical method for cervical ripening. Its use depends on clinical assessment, local protocols, product instructions and the judgement of the healthcare team.
+            </p>
+            <p>
+              This mention is provided as an educational example of a mechanical method and is not a recommendation for any individual patient.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faq-title">Frequently asked questions about induction of labour</h2>
+
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>What is the difference between mechanical and pharmacological induction?</h3>
+            <p>Mechanical methods support cervical ripening through physical action, such as gradual dilation or pressure on the cervix. Pharmacological methods use medication, including prostaglandins, to help ripen the cervix and may stimulate uterine contractions. The choice depends on the clinical situation and local protocols.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>Is induction of labour safe?</h3>
+            <p>Induction of labour is a common medical procedure, but all methods have potential benefits, limitations and risks. Safety depends on the reason for induction, maternal and foetal factors, gestational age, method used and monitoring. A healthcare professional can explain the relevant considerations for an individual pregnancy.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>Can the method be stopped once started?</h3>
+            <p>This depends on the method. Some mechanical devices can usually be removed if clinically indicated. With pharmacological methods, the ability to stop or reduce the effect depends on the medicine, dose, route and formulation. The healthcare team will monitor the response and decide on appropriate next steps.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>Does induction hurt?</h3>
+            <p>Induction can involve discomfort, pressure, cramping or contractions. The level of discomfort varies between individuals and between methods. Placement of a mechanical device may be uncomfortable, while medicines may be associated with cramping or uterine contractions. Pain relief options can be discussed with the healthcare team.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>How long does induction take?</h3>
+            <p>The duration of induction of labour varies. It may take several hours or longer than one day, depending on cervical readiness, the method used, maternal and foetal factors, and how the body responds. Some people require more than one step before active labour begins.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>What is cervical ripening?</h3>
+            <p>Cervical ripening is the process of softening, shortening and opening the cervix before labour. It may happen naturally before spontaneous labour or may be supported during induction of labour using mechanical methods, pharmacological methods or other clinical procedures.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>Are prostaglandins used for induction of labour?</h3>
+            <p>Prostaglandins are one type of pharmacological method used in some induction pathways. They may be administered in different formulations, including vaginal inserts available under various brand names. Their use depends on clinical indication, contraindications, local guidance and monitoring requirements.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>Can induction be done as an outpatient procedure?</h3>
+            <p>Some services may offer selected forms of outpatient cervical ripening for carefully assessed low-risk patients. This depends on local hospital policy, the method used, distance from the maternity unit, ability to return if needed and individual clinical circumstances.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--beige" id="sources" aria-labelledby="sources-title">
+      <div class="container">
+        <span class="eyebrow">E-E-A-T</span>
+        <h2 id="sources-title">Educational sources</h2>
+        <div class="source-card">
+          <p>This page is intended as general educational content and is informed by widely used clinical guidance and published medical literature.</p>
+          <ul class="source-list">
+            <li><a href="https://www.who.int/publications/i/item/9789240055780">World Health Organization</a>: recommendations on mechanical methods for induction of labour.</li>
+            <li><a href="https://www.nice.org.uk/guidance/ng207/chapter/recommendations">NICE guideline NG207</a>: recommendations on inducing labour, assessment, monitoring, pain relief and methods of induction.</li>
+            <li><a href="https://www.cochrane.org/evidence/CD001233_mechanical-methods-induction-labour">Cochrane evidence</a>: review of mechanical methods for induction of labour.</li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/39674507/">Saad AF et al.</a>: peer-reviewed clinical literature on DILAPAN-S and cervical ripening.</li>
+            <li><a href="https://www.dilapan.com/expectant-mothers/guide-to-induction">DILAPAN-S educational materials</a>: patient-focused information about induction of labour and cervical ripening.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <strong>Medical disclaimer</strong>
+      <p>
+        This information is provided for educational purposes only and is not medical advice. It should not be used to diagnose, treat or make decisions about pregnancy care. Always consult a qualified healthcare professional or your maternity care team for advice about induction of labour, cervical ripening and the method that may be appropriate for your individual situation. Featured products may not be approved in every market, and approved labelling, indications and instructions may vary by country.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
