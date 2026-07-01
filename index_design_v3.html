@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Comparing Induction of Labour Methods | DILAPAN-S</title>
+  <meta
+    name="description"
+    content="A clear, patient-friendly comparison of cervical ripening and induction of labour methods, including DILAPAN-S, balloon catheters and prostaglandins."
+  />
+  <meta name="robots" content="index, follow" />
+
+  <style>
+    :root {
+      --beige: #FFFBF9;
+      --white: #FFFFFF;
+      --pink: #C80078;
+      --dark-pink: #75144B;
+      --violet: #787DAA;
+      --text: #75144B;
+      --muted: #6F5B6D;
+      --soft-pink: rgba(200, 0, 120, 0.08);
+      --soft-violet: rgba(120, 125, 170, 0.14);
+      --border: rgba(117, 20, 75, 0.14);
+      --shadow: 0 20px 50px rgba(117, 20, 75, 0.10);
+      --soft-shadow: 0 12px 28px rgba(117, 20, 75, 0.06);
+      --max-width: 1180px;
+      --radius-lg: 34px;
+      --radius-md: 24px;
+      --radius-sm: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--beige);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: var(--pink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--dark-pink);
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 251, 249, 0.94);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 132px;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      color: var(--dark-pink);
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--pink);
+    }
+
+    .section {
+      padding: 78px 0;
+    }
+
+    .section-soft {
+      background: var(--white);
+    }
+
+    .section-compact {
+      padding: 42px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--pink);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--pink);
+      border-radius: 999px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0 0 18px;
+      color: var(--dark-pink);
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+    }
+
+    h1 {
+      max-width: 820px;
+      font-size: clamp(2.45rem, 5vw, 5rem);
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 3vw, 3rem);
+    }
+
+    h3 {
+      font-size: clamp(1.18rem, 1.8vw, 1.52rem);
+      letter-spacing: -0.025em;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .lead {
+      max-width: 780px;
+      color: var(--muted);
+      font-size: clamp(1.04rem, 1.7vw, 1.22rem);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 86px 0 72px;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(200, 0, 120, 0.12), transparent 30%),
+        radial-gradient(circle at 6% 78%, rgba(120, 125, 170, 0.17), transparent 28%),
+        var(--beige);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      width: 260px;
+      height: 260px;
+      border-radius: 52% 48% 60% 40% / 44% 58% 42% 56%;
+      background: var(--soft-pink);
+      pointer-events: none;
+    }
+
+    .hero::before {
+      top: 70px;
+      left: -110px;
+    }
+
+    .hero::after {
+      right: -90px;
+      bottom: 24px;
+      background: var(--soft-violet);
+      border-radius: 42% 58% 48% 52% / 58% 42% 58% 42%;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.98fr);
+      gap: 58px;
+      align-items: center;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 13px 24px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .button-primary {
+      background: var(--pink);
+      color: var(--white);
+      box-shadow: 0 12px 28px rgba(200, 0, 120, 0.22);
+    }
+
+    .button-primary:hover {
+      background: var(--dark-pink);
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .button-secondary {
+      background: var(--white);
+      border-color: var(--border);
+      color: var(--dark-pink);
+    }
+
+    .button-secondary:hover {
+      color: var(--pink);
+      text-decoration: none;
+    }
+
+    .disclaimer-small {
+      max-width: 780px;
+      margin-top: 24px;
+      padding: 14px 18px;
+      background: var(--white);
+      color: var(--muted);
+      font-size: 0.93rem;
+      border-left: 4px solid var(--pink);
+      border-radius: 0 18px 18px 0;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .blob {
+      position: relative;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .blob img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .blob-hero {
+      min-height: 525px;
+      border-radius: 58% 42% 47% 53% / 43% 55% 45% 57%;
+    }
+
+    .blob-hero img {
+      min-height: 525px;
+    }
+
+    .blob-side {
+      min-height: 390px;
+      border-radius: 44% 56% 52% 48% / 57% 43% 57% 43%;
+    }
+
+    .blob-side img {
+      min-height: 390px;
+    }
+
+    .blob-side.alt {
+      border-radius: 58% 42% 43% 57% / 44% 56% 48% 52%;
+    }
+
+    .blob-small {
+      min-height: 260px;
+      border-radius: 52% 48% 60% 40% / 44% 58% 42% 56%;
+    }
+
+    .blob-small img {
+      min-height: 260px;
+    }
+
+    .blob-caption {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      padding: 18px;
+      background: rgba(255, 251, 249, 0.94);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 22px;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .blob-caption strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--dark-pink);
+    }
+
+    .blob-caption span {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .mini-intro {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .card,
+    .panel,
+    .faq-card,
+    .callout {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .card,
+    .panel,
+    .faq-card,
+    .callout {
+      padding: 28px;
+    }
+
+    .card p,
+    .panel p,
+    .faq-card p,
+    .callout p,
+    .card li,
+    .panel li,
+    .faq-card li,
+    .callout li {
+      color: var(--muted);
+    }
+
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .quick-link {
+      display: block;
+      padding: 18px;
+      background: var(--beige);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      color: var(--dark-pink);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .quick-link:hover {
+      text-decoration: none;
+      color: var(--pink);
+    }
+
+    .quick-link span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 400;
+    }
+
+    .core-comparison {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .core-comparison::before {
+      content: "";
+      position: absolute;
+      top: 110px;
+      right: -160px;
+      width: 360px;
+      height: 360px;
+      background: var(--soft-violet);
+      border-radius: 57% 43% 44% 56% / 43% 57% 46% 54%;
+      pointer-events: none;
+    }
+
+    .comparison-intro {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 0.46fr;
+      gap: 34px;
+      align-items: end;
+    }
+
+    .comparison-table-wrap {
+      position: relative;
+      z-index: 1;
+      overflow-x: auto;
+      margin-top: 34px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      min-width: 1120px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 18px 18px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--dark-pink);
+      color: var(--white);
+      font-size: 0.95rem;
+      line-height: 1.35;
+    }
+
+    th:first-child,
+    td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+    }
+
+    th:first-child {
+      background: var(--dark-pink);
+    }
+
+    td:first-child {
+      width: 19%;
+      background: var(--white);
+      color: var(--dark-pink);
+      font-weight: 800;
+      box-shadow: 8px 0 16px rgba(117, 20, 75, 0.05);
+    }
+
+    tbody tr:nth-child(even) td {
+      background: #fff7fb;
+    }
+
+    tbody tr:nth-child(even) td:first-child {
+      background: #fff7fb;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .table-note {
+      position: relative;
+      z-index: 1;
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .icon-badge {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      background: var(--pink);
+      color: var(--white);
+      border-radius: 52% 48% 60% 40% / 42% 58% 42% 58%;
+      font-weight: 800;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 0.88fr 1.12fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .split.reverse {
+      grid-template-columns: 1.12fr 0.88fr;
+    }
+
+    .list-clean {
+      margin: 18px 0 0;
+      padding-left: 22px;
+    }
+
+    .list-clean li {
+      margin-bottom: 10px;
+    }
+
+    .simple-box {
+      margin-top: 22px;
+      padding: 20px;
+      background: var(--beige);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+    }
+
+    .simple-box strong {
+      color: var(--dark-pink);
+    }
+
+    .image-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 22px;
+      margin-top: 34px;
+      align-items: center;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    footer {
+      padding: 40px 0;
+      background: var(--dark-pink);
+      color: var(--white);
+    }
+
+    footer p {
+      max-width: 980px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .footer-title {
+      margin-bottom: 10px;
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-grid,
+      .mini-intro,
+      .comparison-intro,
+      .split,
+      .split.reverse,
+      .grid-3,
+      .grid-2,
+      .image-row {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-links {
+        grid-template-columns: 1fr;
+      }
+
+      th:first-child,
+      td:first-child {
+        position: static;
+        box-shadow: none;
+      }
+    }
+
+    @media (max-width: 720px) {
+      body {
+        font-size: 15px;
+      }
+
+      .container {
+        width: min(100% - 24px, var(--max-width));
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      .nav-links {
+        gap: 12px;
+        font-size: 0.88rem;
+      }
+
+      .hero,
+      .section {
+        padding: 58px 0;
+      }
+
+      .section-compact {
+        padding: 34px 0;
+      }
+
+      .card,
+      .panel,
+      .faq-card,
+      .callout {
+        padding: 22px;
+      }
+
+      th,
+      td {
+        padding: 14px;
+      }
+
+      .blob-hero,
+      .blob-hero img,
+      .blob-side,
+      .blob-side img {
+        min-height: 320px;
+      }
+
+      .blob-small,
+      .blob-small img {
+        min-height: 220px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between DILAPAN-S and a balloon catheter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DILAPAN-S is a hygroscopic cervical dilator that gradually expands by absorbing moisture from the cervix. A balloon catheter is placed through the cervix and filled with fluid to apply pressure. Both are mechanical methods used for cervical ripening, but they work in different ways."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is DILAPAN-S a medicine?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. DILAPAN-S is a mechanical cervical ripening method. It is not a prostaglandin and is not used as a hormone-based medicine."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between DILAPAN-S and prostaglandins?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DILAPAN-S is mechanical and non-pharmacological. Prostaglandins are medicines used in some induction pathways to help prepare the cervix and may also stimulate uterine activity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can induction of labour be stopped once started?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This depends on the method. Some mechanical methods can usually be removed by a healthcare professional if clinically indicated. With pharmacological methods, the effect depends on the medicine, dose, formulation and clinical situation."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="https://www.dilapan.com/" aria-label="DILAPAN-S homepage">
+        <img
+          src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68e5fdb2909881683b7c4081_dilapan-logo.svg"
+          alt="DILAPAN-S"
+        />
+      </a>
+
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#comparison">Comparison table</a>
+        <a href="#vs-balloon">DILAPAN-S vs balloon</a>
+        <a href="#vs-prostaglandins">DILAPAN-S vs prostaglandins</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">For expectant mothers</span>
+          <h1>Comparing cervical ripening methods</h1>
+          <p class="lead">
+            This patient-friendly guide explains the induction of labour comparisons people most often search for:
+            <strong>DILAPAN-S vs balloon catheter</strong>, <strong>DILAPAN-S vs prostaglandins</strong>,
+            and how mechanical and pharmacological methods differ.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#comparison">See the full comparison</a>
+            <a class="button button-secondary" href="#faq">Read common questions</a>
+          </div>
+
+          <p class="disclaimer-small">
+            This content is for educational purposes only. It does not replace advice from your doctor, midwife or maternity care team.
+            Induction of labour is individual, and the method used depends on your medical history, pregnancy and local hospital practice.
+          </p>
+        </div>
+
+        <figure class="blob blob-hero">
+          <img
+            src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68e76dc3b07eb27969e54ff8_em-hero-1.webp"
+            alt="Pregnant woman sitting calmly"
+          />
+          <figcaption class="blob-caption">
+            <strong>Most induction pathways begin with cervical ripening.</strong>
+            <span>This means helping the cervix soften, shorten and open before labour becomes established.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-compact" aria-labelledby="short-definition">
+      <div class="container">
+        <div class="mini-intro">
+          <article class="card">
+            <span class="eyebrow">Short answer</span>
+            <h2 id="short-definition" style="font-size: clamp(1.45rem, 2.2vw, 2rem);">What is induction of labour?</h2>
+            <p>
+              Induction of labour means starting labour with medical help before it begins on its own.
+              In many cases, the first step is <strong>cervical ripening</strong>: helping the cervix soften, shorten and open.
+            </p>
+            <p>
+              This page keeps the definition brief because induction is explained in more detail elsewhere on the website.
+              The focus here is comparison.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="eyebrow">Useful links</span>
+            <h2 style="font-size: clamp(1.45rem, 2.2vw, 2rem);">Explore related information</h2>
+            <div class="quick-links">
+              <a class="quick-link" href="https://www.dilapan.com/expectant-mothers/induction-of-labour" target="_blank" rel="noopener">
+                Induction basics
+                <span>Learn more about induction of labour</span>
+              </a>
+              <a class="quick-link" href="https://www.dilapan.com/expectant-mothers/guide-to-induction" target="_blank" rel="noopener">
+                Step-by-step guide
+                <span>See how induction may progress</span>
+              </a>
+              <a class="quick-link" href="https://www.dilapan.com/expectant-mothers" target="_blank" rel="noopener">
+                Mothers’ hub
+                <span>Find more patient information</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft core-comparison" id="comparison">
+      <div class="container">
+        <div class="comparison-intro">
+          <div>
+            <span class="eyebrow">Main comparison</span>
+            <h2>The core comparison table</h2>
+            <p class="lead">
+              This is the main section of the page. It compares the approaches people most often want explained:
+              <strong>DILAPAN-S</strong>, <strong>balloon catheters</strong> and <strong>prostaglandins</strong>.
+              The language is neutral, clear and written for a lay audience.
+            </p>
+          </div>
+
+          <figure class="blob blob-small">
+            <img
+              src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68ece72bfe3da7e62f79fbf1_step-1.webp"
+              alt="Pregnant woman arriving for hospital assessment"
+            />
+          </figure>
+        </div>
+
+        <div class="comparison-table-wrap" aria-label="Comparison of cervical ripening methods">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Question</th>
+                <th scope="col">DILAPAN-S<br /><span style="font-weight:400;">Hygroscopic dilator</span></th>
+                <th scope="col">Balloon catheter</th>
+                <th scope="col">Prostaglandins</th>
+                <th scope="col">What may happen next</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>What is it?</td>
+                <td>DILAPAN-S is a hygroscopic cervical dilator. Small rods are placed into the cervix by a trained healthcare professional.</td>
+                <td>A balloon catheter is a tube with one or more balloons that are placed through the cervix and then filled with fluid.</td>
+                <td>Prostaglandins are medicines used to help prepare the cervix and may also stimulate uterine activity.</td>
+                <td>Once the cervix is considered ready, the next step may include breaking the waters, starting an oxytocin drip, or continued observation, depending on clinical circumstances.</td>
+              </tr>
+              <tr>
+                <td>How does it work?</td>
+                <td>The rods absorb moisture from the cervix and gradually expand, helping the cervix soften, shorten and open.</td>
+                <td>The inflated balloon applies pressure to the cervix, which may help it soften and open.</td>
+                <td>The medicine acts on cervical tissue and may also be associated with uterine contractions.</td>
+                <td>The next step depends on how ready the cervix is and how labour is progressing.</td>
+              </tr>
+              <tr>
+                <td>Mechanical or medicine-based?</td>
+                <td>Mechanical, non-pharmacological.</td>
+                <td>Mechanical, non-pharmacological.</td>
+                <td>Pharmacological.</td>
+                <td>This stage may involve procedures, medicines, or watchful waiting.</td>
+              </tr>
+              <tr>
+                <td>Does it directly stimulate contractions?</td>
+                <td>It typically acts locally on the cervix and is not primarily used to stimulate contractions.</td>
+                <td>It typically acts locally through pressure and is not primarily used to stimulate contractions.</td>
+                <td>It may be associated with uterine stimulation, depending on the medicine, dose and formulation.</td>
+                <td>Later steps are often intended to start or strengthen contractions once the cervix is ready.</td>
+              </tr>
+              <tr>
+                <td>Can it be removed or stopped?</td>
+                <td>The dilators can usually be removed by a healthcare professional if clinically indicated.</td>
+                <td>The catheter can usually be removed by a healthcare professional if clinically indicated.</td>
+                <td>This depends on the medicine used, the dose, the formulation and the clinical situation.</td>
+                <td>This depends on the specific intervention and how labour is progressing.</td>
+              </tr>
+              <tr>
+                <td>What might it feel like?</td>
+                <td>Insertion may feel similar to a vaginal examination for some people. Cramping or pressure may occur.</td>
+                <td>Insertion may feel uncomfortable for some people. Pressure, cramping or awareness of the catheter may occur.</td>
+                <td>Cramping, tightening or contractions may occur. Experiences vary from person to person.</td>
+                <td>Contractions may become stronger or more regular. Pain relief options can be discussed with the healthcare team.</td>
+              </tr>
+              <tr>
+                <td>Monitoring</td>
+                <td>Monitoring depends on maternal and foetal factors, local policy and whether outpatient cervical ripening is offered.</td>
+                <td>Monitoring depends on maternal and foetal factors, local policy and the catheter protocol used in the maternity unit.</td>
+                <td>Monitoring requirements may differ because prostaglandins can affect uterine activity and foetal wellbeing.</td>
+                <td>Monitoring later in labour usually depends on contractions, foetal wellbeing and local labour ward protocols.</td>
+              </tr>
+              <tr>
+                <td>Use in specific situations</td>
+                <td>It may be considered in certain clinical situations, depending on guidelines, local practice and individual assessment.</td>
+                <td>It may be considered in certain clinical situations, depending on guidelines, local practice and individual assessment.</td>
+                <td>Use depends on the medicine, contraindications, clinical context and local guidance.</td>
+                <td>The next step always depends on how ready the cervix is and the overall clinical picture.</td>
+              </tr>
+              <tr>
+                <td>How long can it take?</td>
+                <td>The time needed can vary. Product instructions and local protocols guide how long the dilators are left in place.</td>
+                <td>The time needed can vary depending on the catheter used, the cervix and local protocol.</td>
+                <td>The time needed can vary depending on the medicine, dose, response and local protocol.</td>
+                <td>Once labour begins, progress can vary considerably from person to person.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="table-note">
+          Sources: <a href="https://www.nice.org.uk/guidance/ng207" target="_blank" rel="noopener">NICE guidance on inducing labour</a>,
+          <a href="https://www.who.int/publications" target="_blank" rel="noopener">WHO publications</a>,
+          <a href="https://www.cochranelibrary.com/" target="_blank" rel="noopener">Cochrane reviews</a>,
+          <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">peer-reviewed clinical literature indexed in PubMed</a>, and
+          <a href="https://www.dilapan.com/bibliography-and-sources" target="_blank" rel="noopener">the DILAPAN-S references page</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="searched-comparisons">
+      <div class="container">
+        <span class="eyebrow">Most searched comparisons</span>
+        <h2 id="searched-comparisons">The questions people ask most often</h2>
+        <p class="lead">
+          Search behaviour around induction of labour is often comparison-based. Instead of only separating methods into “mechanical”
+          and “pharmacological”, this page also answers the specific questions people tend to type into Google and AI search tools.
+        </p>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon-badge">A</div>
+            <h3>DILAPAN-S vs balloon catheter</h3>
+            <p>Both are mechanical methods used for cervical ripening, but they work differently.</p>
+            <ul class="list-clean">
+              <li>DILAPAN-S works by gradual expansion after absorbing moisture.</li>
+              <li>A balloon catheter works by applying pressure through an inflated balloon.</li>
+              <li>Both are placed by trained healthcare professionals.</li>
+              <li>Suitability depends on individual clinical assessment and local hospital protocol.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon-badge">B</div>
+            <h3>DILAPAN-S vs prostaglandins</h3>
+            <p>These methods differ not only in design, but also in how they act.</p>
+            <ul class="list-clean">
+              <li>DILAPAN-S is mechanical and non-pharmacological.</li>
+              <li>Prostaglandins are medicines and may be associated with uterine stimulation.</li>
+              <li>Monitoring requirements may differ depending on the method and pregnancy.</li>
+              <li>Neither approach is automatically suitable for everyone.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon-badge">C</div>
+            <h3>Balloon catheter vs prostaglandins</h3>
+            <p>This is another common question when people want to understand mechanical versus medicine-based approaches.</p>
+            <ul class="list-clean">
+              <li>Balloon catheters are mechanical methods.</li>
+              <li>Prostaglandins are pharmacological methods.</li>
+              <li>They may differ in monitoring, uterine stimulation and administration.</li>
+              <li>The decision depends on local practice and individual clinical factors.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="image-row" aria-label="Decorative patient education images">
+          <figure class="blob blob-small">
+            <img src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68ece72b17bfb1af581c5640_step-2.avif" alt="Pregnant woman preparing for induction discussion" />
+          </figure>
+          <figure class="blob blob-small">
+            <img src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68ece72bb5a4582bc81ce755_step-4.webp" alt="Pregnant woman during induction preparation" />
+          </figure>
+          <figure class="blob blob-small">
+            <img src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68ece72b9d07780e2cdda173_step-6.webp" alt="Pregnant woman resting during the induction pathway" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="vs-balloon" aria-labelledby="vs-balloon-title">
+      <div class="container split">
+        <figure class="blob blob-side">
+          <img
+            src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68ece72b17bfb1af581c5640_step-2.avif"
+            alt="Pregnant woman preparing for induction discussion"
+          />
+        </figure>
+
+        <div>
+          <span class="eyebrow">Detailed comparison</span>
+          <h2 id="vs-balloon-title">DILAPAN-S vs balloon catheter</h2>
+          <p>
+            DILAPAN-S and balloon catheters are both used to help prepare the cervix before labour becomes established.
+            They are both mechanical methods, which means they are not based on prostaglandin medication.
+          </p>
+          <p>
+            The main difference is in how they work. DILAPAN-S consists of small hygroscopic rods that gradually expand after placement.
+            A balloon catheter works by inflating a balloon to apply pressure to the cervix.
+          </p>
+          <div class="simple-box">
+            <strong>In simple terms:</strong>
+            both aim to help the cervix open, but they do so in different ways. Your maternity team can explain which options are available where you are giving birth and which may fit your clinical situation.
+          </div>
+          <ul class="list-clean">
+            <li>Both are placed by trained healthcare professionals.</li>
+            <li>Both may be associated with discomfort during placement.</li>
+            <li>Both require decisions based on clinical context, not internet comparisons alone.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vs-prostaglandins" aria-labelledby="vs-prostaglandins-title">
+      <div class="container split reverse">
+        <div>
+          <span class="eyebrow">Detailed comparison</span>
+          <h2 id="vs-prostaglandins-title">DILAPAN-S vs prostaglandins</h2>
+          <p>
+            DILAPAN-S is a mechanical cervical ripening method. Prostaglandins are medicines used in some induction pathways
+            to help prepare the cervix and may also stimulate the uterus.
+          </p>
+          <p>
+            From a patient-information perspective, the key difference is that one method acts locally through gradual physical expansion,
+            while the other uses medication. Prostaglandins are sometimes administered in the form of vaginal inserts available under various brand names.
+          </p>
+          <p>
+            Because prostaglandins may be associated with uterine stimulation, monitoring requirements and the experience of the process can differ
+            depending on the medicine, the dose and the local protocol.
+          </p>
+          <div class="simple-box">
+            <strong>In simple terms:</strong>
+            DILAPAN-S is non-pharmacological. Prostaglandins are pharmacological. Both may be part of cervical ripening, depending on the clinical situation.
+          </div>
+        </div>
+
+        <figure class="blob blob-side alt">
+          <img
+            src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68ecc3fc9428749e7376401b_hero-image-1.webp"
+            alt="Pregnant woman in a calm home setting"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="method-choice">
+      <div class="container split">
+        <figure class="blob blob-side">
+          <img
+            src="https://cdn.prod.website-files.com/68e3ab3b741189bddb2b6236/68ea0e28a560a2cc45ffda95_big-moment-img-2.webp"
+            alt="Pregnant woman resting during late pregnancy"
+          />
+        </figure>
+
+        <div>
+          <span class="eyebrow">How decisions are made</span>
+          <h2 id="method-choice">How is the method chosen?</h2>
+          <p>
+            The method is chosen after clinical assessment. The aim of this page is to help you understand the options, not to recommend a specific method.
+          </p>
+          <ul class="list-clean">
+            <li><strong>Cervical readiness:</strong> whether the cervix is closed, firm, short, soft or already opening.</li>
+            <li><strong>Previous birth history:</strong> including previous vaginal birth or previous caesarean section.</li>
+            <li><strong>Pregnancy factors:</strong> such as gestational age, maternal health, foetal growth and foetal wellbeing.</li>
+            <li><strong>Reason for induction:</strong> for example, pregnancy continuing beyond the expected due date or another clinical reason.</li>
+            <li><strong>Hospital policy:</strong> not every maternity unit offers every method or outpatient pathway.</li>
+            <li><strong>Your questions and preferences:</strong> these matter, but they need to be considered alongside clinical suitability.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="common-questions">
+      <div class="container">
+        <span class="eyebrow">Clear, patient-friendly answers</span>
+        <h2 id="common-questions">What many mothers want to know</h2>
+
+        <div class="grid-2">
+          <article class="panel">
+            <h3>Can the process be paused or changed?</h3>
+            <p>
+              With some mechanical methods, the device can usually be removed by a healthcare professional if there is a clinical reason.
+              With pharmacological methods, what can be changed depends on the medicine, formulation, dose and timing.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>Will I need continuous monitoring?</h3>
+            <p>
+              Monitoring varies. It may depend on the induction method, your pregnancy, the reason for induction, foetal wellbeing and local hospital practice.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>Will it hurt?</h3>
+            <p>
+              Cervical ripening can involve discomfort, pressure, cramping or tightening. The experience differs between individuals and between methods.
+              Ask your healthcare team what sensations are expected and when you should ask for help.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>How long can induction take?</h3>
+            <p>
+              Induction of labour can take several hours or longer than one day. The length of the process depends on cervical readiness,
+              the method used, how the body responds and what happens in the next steps.
+            </p>
+          </article>
+        </div>
+
+        <div class="callout">
+          <span class="eyebrow">Questions to ask</span>
+          <h3 style="font-size: clamp(1.35rem, 2vw, 1.8rem);">Helpful questions for your doctor or midwife</h3>
+          <ul class="list-clean">
+            <li>Which induction methods are available in this hospital?</li>
+            <li>What is the difference between DILAPAN-S and a balloon catheter in my situation?</li>
+            <li>Are prostaglandins suitable for me?</li>
+            <li>Could I be offered outpatient cervical ripening, or do I need to stay in hospital?</li>
+            <li>What monitoring will I need during the process?</li>
+            <li>When should I call or return to hospital?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="faq">
+      <div class="container">
+        <span class="eyebrow">FAQ</span>
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-list">
+          <article class="faq-card">
+            <h3>What is the difference between DILAPAN-S and a balloon catheter?</h3>
+            <p>
+              DILAPAN-S is a hygroscopic dilator that gradually expands by absorbing moisture from the cervix.
+              A balloon catheter is placed through the cervix and then filled with fluid to apply pressure.
+              Both are mechanical cervical ripening methods, but they work in different ways.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Is DILAPAN-S a medicine?</h3>
+            <p>
+              No. DILAPAN-S is a mechanical cervical ripening method. It is not a prostaglandin and is not used as a hormone-based medicine.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>What is the difference between mechanical and pharmacological induction?</h3>
+            <p>
+              Mechanical methods help prepare the cervix through physical action, such as gradual expansion or pressure.
+              Pharmacological methods use medicines, including prostaglandins, to support cervical ripening and may affect uterine activity.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Can the induction method be stopped once started?</h3>
+            <p>
+              This depends on the method used. Some mechanical methods can usually be removed by a healthcare professional if clinically indicated.
+              With pharmacological methods, what can be changed depends on the medicine, dose, formulation and clinical situation.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Can cervical ripening be done at home?</h3>
+            <p>
+              Some maternity units offer outpatient cervical ripening for carefully selected low-risk patients.
+              This is not available everywhere and is not suitable for everyone. Eligibility depends on local policy and clinical assessment.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>What happens after the cervix is ready?</h3>
+            <p>
+              The next step may include breaking the waters, starting or increasing contractions, or continued observation.
+              This depends on your progress and the overall clinical picture.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Where can I learn more?</h3>
+            <p>
+              You can read more in the
+              <a href="https://www.dilapan.com/expectant-mothers" target="_blank" rel="noopener">DILAPAN-S expectant mothers section</a>,
+              the
+              <a href="https://www.dilapan.com/expectant-mothers/guide-to-induction" target="_blank" rel="noopener">step-by-step guide to induction</a>,
+              and the
+              <a href="https://www.dilapan.com/bibliography-and-sources" target="_blank" rel="noopener">bibliography and sources page</a>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sources">
+      <div class="container">
+        <span class="eyebrow">Sources</span>
+        <h2 id="sources">Further reading and educational references</h2>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Clinical and public information sources</h3>
+            <ul class="list-clean">
+              <li><a href="https://www.nice.org.uk/guidance/ng207" target="_blank" rel="noopener">NICE guideline NG207: Inducing labour</a></li>
+              <li><a href="https://www.who.int/publications" target="_blank" rel="noopener">World Health Organization publications</a></li>
+              <li><a href="https://www.cochranelibrary.com/" target="_blank" rel="noopener">Cochrane reviews</a></li>
+              <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed clinical literature</a></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Related DILAPAN-S pages</h3>
+            <ul class="list-clean">
+              <li><a href="https://www.dilapan.com/expectant-mothers/induction-of-labour" target="_blank" rel="noopener">Induction of labour</a></li>
+              <li><a href="https://www.dilapan.com/expectant-mothers/guide-to-induction" target="_blank" rel="noopener">Guide to induction</a></li>
+              <li><a href="https://www.dilapan.com/expectant-mothers" target="_blank" rel="noopener">Expectant mothers</a></li>
+              <li><a href="https://www.dilapan.com/bibliography-and-sources" target="_blank" rel="noopener">Bibliography and sources</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-title">Medical disclaimer</p>
+      <p>
+        This information is provided for educational purposes only and is not medical advice. It should not be used to diagnose, treat or make decisions about pregnancy care.
+        Always consult a qualified healthcare professional or your maternity care team about induction of labour, cervical ripening and the method that may be suitable for your individual situation.
+        Featured products may not be approved in every market, and approved labelling, indications and instructions may vary by country.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
